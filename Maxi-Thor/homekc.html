@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KClink</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+
+
+<style>
+
+
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+   
+    color: white;
+}
+
+.centered1 {
+    position: absolute;
+    top: 20%;
+    left:10%;
+
+    color: white;
+}
+
+.centered2 {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+   
+    color: white;
+}
+
+
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+
+
+</style>
+
+
+
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: lightblue">
+ 
+<div class="container">
+    <div class="navbar-header">
+      
+      <a href="homekc.html"><img src="java.png" width=100px height=60px></a>
+    </div>
+
+     
+
+  <div class="nav navbar-nav navbar-right" style=" background-color: lightblue">  
+  
+ <ul class="nav navbar-nav ">
+
+ <li class="dropdown" ><a href="homekc.html"><b>Home</b></a></li> 
+
+
+
+ <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Corporate  <span class="caret"></span></b></a>
+
+         <ul class="dropdown-menu" style="background-color: lightblue">
+          <li><a href="p1.html"> Overview</a></li>
+          <li><a href="p2.html"> Mission& Vision </a></li>
+          <li><a href="p3.html"> People @ Kclink</a></li>
+          <li><a href="p4.html"> Stregic Alliances</a></li>
+          <li><a href="p5.html"> Awards & Recognition</a></li>
+          <li><a href="p6.html"> Corporate Responsibility</a></li>
+          <li><a href="p7.html"> Testimonials</a></li>
+          <li><a href="p8.html"> Locations</a></li>
+       
+        </ul>
+ </li>
+
+
+  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Services <span class="caret"></span></b></a>
+
+        <ul class="dropdown-menu" style="background-color: lightblue">
+          <li><a href="p9.html"> Software Development</a></li>
+          <li><a href="p10.html"> Web Services </a></li>
+          <li><a href="p11.html"> Software Application</a></li>
+          <li><a href="p12.html"> Mobility Solutions</a></li>
+          <li><a href="p13.html"> Independent QA</a></li>
+          <li><a href="p14.html"> Recruitment Process</a></li>
+          <li><a href="p15.html"> BPO</a></li>
+          <li><a href="p16.html"> Training</a></li>
+       
+        </ul>
+
+  </li> 
+
+
+  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Products <span class="caret"></span></b></a>
+
+           <ul class="dropdown-menu" style="background-color: lightblue">
+          <li><a href="p17.html"> Enterprise Resource</a></li>
+          <li><a href="p18.html"> Customer Relationship </a></li>
+          <li><a href="p19.html"> Document Management</a></li>
+          <li><a href="p20.html"> Invoice Processing System</a></li>
+          <li><a href="p21.html"> Record Management System</a></li>
+          <li><a href="p22.html"> Case Management System</a></li>
+          <li><a href="p23.html"> Automatic Vehicle Locator</a></li>
+          <li><a href="p24.html"> Hospital Management System</a></li>
+       
+        </ul>
+
+
+  </li>  
+
+  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Industry Solutions <span class="caret"></span></b></a>
+
+                <ul class="dropdown-menu" style="background-color: lightblue">
+          <li><a href="p25.html"> Manufacturing</a></li>
+          <li><a href="p26.html"> Retail </a></li>
+          <li><a href="p27.html"> Travel,Transportation and<br>Hospitability</a></li>
+          <li><a href="p28.html"> IT/ITES</a></li>
+          <li><a href="p29.html"> Banking & Finance</a></li>
+          <li><a href="p30.html"> Shipping</a></li>
+              </ul>
+    
+
+  </li>
+
+
+  <li><a href="p31.html"><b>Engagement Models</b></a></li>
+    <li><a href="p32.html"><b>Technology</b></a></li>
+
+      <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><b>Resources <span class="caret"></span></b></a>
+          <ul class="dropdown-menu" style="background-color: lightblue">
+          <li><a href="p33.html"> Future Drivers</a></li>
+          <li><a href="p34.html"> Case Studies </a></li>
+          <li><a href="p35.html"> Brochures</a></li>
+         
+              </ul>
+
+      </li>
+
+        <li><a href="partner.html"><b>Partner us</b></a></li>
+    </ul>
+  </div>
+
+    </div>
+
+</nav>
+
+
+
+
+<div class="">
+
+  <br><br><br>
+   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="satellite1.jpg"   style="width:100%; height:400px">
+
+            <div class="centered"><marquee style="width: 700px" ><h2 style="font-family: Algerian">UX/UI Design</h2><h4><i>Please use the search box.<br>Feel free to subscribe to our syndicated feeds.<br>Please use the search box.</i></h4></marquee></div>
+
+      </div>
+
+         <div class="item">
+        <img src="sdan2.jpg" style="width:100%; height:400px">
+         <div class="centered"><marquee style="width: 700px"><h2 style="font-family:Cooper Black">Software Development</h2><h4><i>Please use the search box.<br>Feel free to subscribe to our syndicated feeds.<br>Please use the search box.</i></h4></marquee></div>
+      </div>
+
+
+      <div class="item">
+        <img src="Anban3.jpg" style="width:100%; height:400px">
+
+         <div class="centered"><marquee style="width: 700px"><h2 style="font-family:Curlz MT"><b>Android Development</b></h2><h4><i>Please use the search box.<br>Feel free to subscribe to our syndicated feeds.<br>Please use the search box.</i></h4></marquee></div>
+      </div>
+
+       <div class="item">
+        <img src="dmban.jpg" style="width:100%; height:400px">
+         <div class="centered"><marquee style="width: 700px"><h2 style="font-family: Lucida Calligraphy">Digital Marketing</h2><h4><i>Please use the search box.<br>Feel free to subscribe to our syndicated feeds.<br>Please use the search box.</i></h4></marquee></div>
+      </div>
+    
+      <div class="item">
+        <img src="stban.jpg" style="width:100%; height:400px">
+         <div class="centered"><marquee style="width: 700px"><h2 style="font-family: Algerian">Software Testing</h2><h4><i>Please use the search box.<br>Feel free to subscribe to our syndicated feeds.<br>Please use the search box.</i></h4></marquee></div>
+      </div>
+
+
+     
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a> 
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<br><br>
+
+
+<div class="container">
+<div class="row">
+
+  <div class="col-md-3">
+
+  <div class="hovereffect">
+        <img class="img-responsive" src="tr8.jpg" style="width:250px;height:150px;border-radius: 20px">
+        <div class="overlay">
+          
+           <center><a class="info" href="Appdev.html">Read More</a></center>
+        </div>
+    <br>
+    </div>
+              
+      <center><h4>Custom Application<br> Development</h4></center>
+   </div>
+
+
+    <div class="col-md-3">
+
+         <div class="hovereffect">
+        <img class="img-responsive" src="tr9.jpg" style="width:250px;height:150px;border-radius: 20px">
+        <div class="overlay">
+          
+           <center><a class="info" href="Docmang.html">Read More</a></center>
+        </div>
+                <br>
+    </div>
+
+         <center><h4>Document Management<br>and Imaging Solutions</h4></center>
+
+   </div>
+
+     <div class="col-md-3">
+
+  <div class="hovereffect">
+        <img class="img-responsive" src="tr10.jpg" style="width:250px;height:150px;border-radius: 20px">
+        <div class="overlay">
+          
+           <center><a class="info" href="webdesign.html">Read More</a></center>
+        </div>
+                <br>
+    </div>
+
+       <center><h4>Web Solutions</h4></center>
+
+   </div>
+
+
+
+    <div class="col-md-3">
+      <div class="hovereffect">
+        <img class="img-responsive" src="tr9.jpg" style="width:250px;height:150px;border-radius: 20px">
+        <div class="overlay">
+          
+           <center><a class="info" href="hiring.html">Read More</a></center>
+        </div>
+             <br>
+    </div>
+           
+            <center><h4>Hire a Developer</h4></center>
+   </div>
+
+</div>
+
+</div>
+
+<br>
+
+
+
+
+
+<div class="row" style="background-color: grey">
+
+
+  <div class="col-md-4">
+<br>
+     <center><img src="techzonelogo.png" width=100px height=60px><br></center>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+  </div>
+
+
+ <div class="col-md-4">
+
+  <h4 style="color: white;font-family: Algerian">CONTACT US</h4>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod.<br><br>
+
+
+
+  <span class="glyphicon glyphicon-home"></span> 61 Park Street, Fifth Avenue, NY.<br>
+   <span class="glyphicon glyphicon-phone"></span> [88] 657 524 332<br>
+   <span class="glyphicon glyphicon-envelope"></span> info@star-travel.com<br>
+   <br>
+  </div>
+
+
+
+   <div class="col-md-4">
+    <h4 style="color: white;font-family: Algerian">NEWS LETTER</h4>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.<br><br>
+
+    <button><input type="mail" name="text" placeholder="Enter mail id">send</button>
+
+    
+  </div>
+  <br><br>
+
+
+</div>
+
+
+<center><footer style="background-color: white"><br> Copyright © 2016. All Rights Reserved by Abdus. <br><br></footer></center>
+
+
+</body>
+</html>
